@@ -18,10 +18,8 @@ CRGB leds[NUM_LEDS+1];
 
 
 //WiFiManager wifiManager;
-#define WIFI_SSID "FastWorkshop"
-#define WIFI_PASSWORD "stoatgobbler"
-//#define WIFI_SSID "DanglyBits"
-//#define WIFI_PASSWORD "stoatgobbler"
+#define WIFI_SSID "#####################"
+#define WIFI_PASSWORD "#######################"
 
 //EEPROM Locations for values between boots
 #define REBOOT_ADDR 1
@@ -45,7 +43,7 @@ float Phantom = 0.42; //Estimate of Phantom Power load
 //***************************************************************
 
 //Solcast Solar Forecast
-const char* SolarAPIKey = "AgmkE3a1Fi1dOIN6LLZCEhQSoZiyyyfA"; // Replace with your Solcast API key
+const char* SolarAPIKey = "#############################"; // Replace with your Solcast API key
 String SolarURL = "https://api.solcast.com.au/rooftop_sites/8db5-bc30-c169-8416/forecasts?format=json";
 
 //Octopus Agile
@@ -61,9 +59,9 @@ ESP32Time rtc(3600);  // offset in seconds GMT+1
 
 //Home Assistant Integrations
 #define HOME_ASSISTANT_IP "192.168.1.203"
-//#define HOME_ASSISTANT_IP "https://t4s3001lmk27d7o5ohcn7dmdij58s9d0.ui.nabu.casa" //For remote access
+//#define HOME_ASSISTANT_IP "https://###################" //Use Nabu Casa address for remote access
 #define HOME_ASSISTANT_PORT 8123
-#define HOME_ASSISTANT_TOKEN "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI5NTdiNWFiNTJkMzI0ZGVjOWUzYzg1YmUxNGIwZWE4ZSIsImlhdCI6MTY4MTU3NDY3OCwiZXhwIjoxOTk2OTM0Njc4fQ.N0J6wpXv48QUOetieIirENAztc9TygZXY7IM1EdZOos"
+#define HOME_ASSISTANT_TOKEN "###########################################################"
 
 
 const int httpsPort = 443;
